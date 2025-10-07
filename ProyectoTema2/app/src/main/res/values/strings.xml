@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProyectoTema2</string>
+    <string name="app_name">BopApp</string>
     <string name="texto_titulo">BopApp</string>
-    <string name="botonlogin">Login</string>
+    <string name="botonlogin">Iniciar Sesion</string>
 </resources>
