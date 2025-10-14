@@ -55,6 +55,11 @@ public class MainActivity extends AppCompatActivity {
             if(user.equals(USER) && pass.equals(PASS)){
                 Intent intent = new Intent(this, ActivityProfile.class);
 
+
+                //pasar datos a la actividad perfil
+                intent.putExtra("username",user);
+                intent.putExtra("password",pass);
+
                 //Poner delay de 2 segundos
                 // try {
                 //  Thread.sleep(2000);
