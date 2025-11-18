@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NBA2K</string>
+    <string name="nombre">Nombre:</string>
+    <string name="alero">Alero</string>
+    <string name="base">Base</string>
+    <string name="escolta">Escolta</string>
+    <string name="ala_pivot">Ala-Pivot</string>
+    <string name="pivot">Pivot</string>
+    <string name="resumen_jugador">Resumen Jugador</string>
+    <string name="cargar_jugador">Cargar Jugador</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="posicion">Posicion:</string>
+    <string name="estad_sticas_nba">Estadísticas NBA</string>
+    <string name="guardar_jugador">Guardar Jugador</string>
+</resources>

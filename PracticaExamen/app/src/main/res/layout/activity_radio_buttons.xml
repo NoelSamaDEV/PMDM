@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtons"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-4dp">
+
+    <TextView
+        android:id="@+id/textViewColorGatito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="COLOR GATITO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupColorGatos"
+        android:layout_width="294dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewColorGatito">
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoBlanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gato Blanco" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoNegro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gato Negro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoNaranja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gato Naranja" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRazaGatito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="RAZA GATITO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupColorGatos" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRazaGatos"
+        android:layout_width="293dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRazaGatito">
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoSiames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siames" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoPersa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Persa" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGatoSomali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Somali" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonEnviarGato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRazaGatos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

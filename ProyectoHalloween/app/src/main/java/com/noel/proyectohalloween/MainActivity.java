@@ -1,7 +1,12 @@
 package com.noel.proyectohalloween;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,9 +29,60 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+
         ImageView calabaza = findViewById(R.id.imageView);
 
-        Glide.with(this).load("https://gifs.org.es/gifs/2020/10/8204/gif-animado-de-halloween.gif").into(calabaza);
+        Glide.with(this).load("https://assets.hvmag.com/2023/09/pumpkin-world-AdobeStock_626050040.jpg")
+                .into(calabaza);
+
+
+        Button btnComer = findViewById(R.id.buttonCagalera);
+        btnComer.setOnClickListener(v -> {
+            Intent i = new Intent(this, RadioButtonActivity.class);
+            startActivity(i);
+        });
+
+
+
+        Button btnGuardar = findViewById(R.id.buttonGuardar);
+        EditText texto = findViewById(R.id.editTextGuardar);
+
+        mostrarDatoGuardado();
+
+        btnGuardar.setOnClickListener(v -> {
+            //Guardar datos con SharedPreferences
+
+            //Crear objeto SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences("misDatos", MODE_PRIVATE);
+
+            //Obtener editor de SharedPreferences
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+            //Añadir nuevo dato de tipo cadena
+            editor.putString("TextoImportante", texto.getText().toString());
+
+            //Guardar datos
+            editor.apply(); //Guarda el dato de manera asincrona
+            //editor.commit(); //Guarda el dato de manera sincrona
+        });
 
     }
+
+    private void mostrarDatoGuardado() {
+
+        String msg;
+
+        //Recuperar el dato guardado con SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("misDatos", MODE_PRIVATE);
+
+        //Recuperar el dato guardado
+        msg = sharedPreferences.getString("TextoImportante", "No hay datos guardados");
+
+
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
+
+
+
+
 }

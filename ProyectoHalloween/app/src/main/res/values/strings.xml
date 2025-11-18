@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ProyectoHalloween</string>
+    <string name="button_guargar">Guardar dato</string>
+    <string name="radiobutton_patatas">Con patatas</string>
+    <string name="radiobutton_sinpatatas">Sin patatas</string>
+    <string name="radiobutton_durum">Menu durum</string>
+    <string name="radiobutton_kebab">Menu kebab</string>
+    <string name="radiobutton_lamachum">Menu lamachum</string>
+    <string name="button_comer">Tengo hambre</string>
+    <string name="button_comprar">Comprar</string>
 </resources>

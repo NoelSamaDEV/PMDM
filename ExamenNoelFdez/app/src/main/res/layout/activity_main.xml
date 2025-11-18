@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewNombreMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nombre" />
+
+        <EditText
+            android:id="@+id/editTextTextNombreMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPosicionesMain"
+        android:layout_width="290dp"
+        android:layout_height="253dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RadioButton
+            android:id="@+id/radioButtonAleroMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alero" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBaseMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/base" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEscoltaMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/escolta" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAlaPivotMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ala_pivot" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPivotMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pivot" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCrearJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Crear Jugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPosicionesMain" />
+
+    <Button
+        android:id="@+id/buttonCargarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Cargar datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCrearJugador" />
+</androidx.constraintlayout.widget.ConstraintLayout>
