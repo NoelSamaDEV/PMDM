@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8B0000">
+
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_grinch"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+
+    <!-- SCORE / NIVEL -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score 0/5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:padding="14dp"
+        android:textColor="#FFD700"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/title_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- RECUADRO DE PREGUNTAS -->
+    <LinearLayout
+        android:id="@+id/recuadro"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_bg"
+        android:layout_below="@id/tvScore"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Pregunta"
+            android:textColor="#050505"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn"
+            android:text="Respuesta 1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn"
+            android:text="Respuesta 2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/btn"
+            android:text="Respuesta 3"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn"
+            android:text="Respuesta 4"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>
