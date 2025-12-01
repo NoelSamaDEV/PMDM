@@ -1,0 +1,21 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mercadonaFragment"
+        android:icon="@drawable/mercadona"
+        android:title="Mercadona" />
+
+    <item
+        android:id="@+id/lidlFragment"
+        android:icon="@drawable/lidl"
+        android:title="Lidl" />
+
+    <item
+        android:id="@+id/alimerkaFragment"
+        android:icon="@drawable/alimerka"
+        android:title="Alimerka" />
+
+</menu>
+
+

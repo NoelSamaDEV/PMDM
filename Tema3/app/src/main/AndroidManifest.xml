@@ -12,10 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tema3">
         <activity
-            android:name=".MainActivity"
+            android:name=".ListActivity"
             android:exported="false" />
         <activity
             android:name=".ActivityBottomNavegation"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuHamburguesa"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

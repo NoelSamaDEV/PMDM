@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mercadonaFragment">
+
+    <fragment
+        android:id="@+id/mercadonaFragment"
+        android:name="com.noel.comprapplist.MercadonaFragment"
+        android:label="Mercadona"
+        tools:layout="@layout/fragment_mercadona" />
+
+    <fragment
+        android:id="@+id/lidlFragment"
+        android:name="com.noel.comprapplist.LidlFragment"
+        android:label="Lidl"
+        tools:layout="@layout/fragment_lidl" />
+
+    <fragment
+        android:id="@+id/alimerkaFragment"
+        android:name="com.noel.comprapplist.AlimerkaFragment"
+        android:label="Alimerka"
+        tools:layout="@layout/fragment_alimerka" />
+
+</navigation>
+
